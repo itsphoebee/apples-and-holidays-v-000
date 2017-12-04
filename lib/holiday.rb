@@ -71,9 +71,8 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
   holiday_hash.each {|season,holidays|
     puts "#{season.capitalize}:"
-      holidays.map {|holiday, item_list|
-        holiday.to_s.split.("_").map
-        puts "  #{holiday}: #{item_list.join(", ")}"
+      holidays.map {|holiday, item_list|    
+        puts "  #{holiday.to_s.split.("_").map}: #{item_list.join(", ")}"
         #puts "  #{holiday.capitalize}: #{item_list.join(", ")}"
   }
 }
