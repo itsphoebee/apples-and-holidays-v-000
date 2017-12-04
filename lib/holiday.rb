@@ -85,7 +85,6 @@ def all_holidays_with_bbq(holiday_hash)
   holiday_hash.each {|season,holidays|
     holidays.each {|holiday,item|
       holiday.to_s.each {|thing|
-        binding.pry
       if thing == "BBQ"
        holidays << holiday
     end
