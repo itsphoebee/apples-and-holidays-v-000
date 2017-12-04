@@ -92,5 +92,4 @@ def all_holidays_with_bbq(holiday_hash)
     }
   #if holiday_hash.has_value?("BBQ")
   #return keys
-holidays
 end
